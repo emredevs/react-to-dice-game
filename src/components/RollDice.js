@@ -10,12 +10,12 @@ export default function RollDice() {
     setDice({ dice1: newDice1, dice2: newDice2 });
   };
   return (
-    <div className="RollDice">
+    <div>
       <div className="RollDice-container">
-        <Dice face1={dice.dice1} />
-        <Dice face2={dice.dice2} />
+        <Dice face1={dice.dice1} face2={dice.dice2} />
       </div>
-      <button className="btn" onClick={numberDice}>
+
+      <button className="btn dice-btn" onClick={numberDice}>
         Bul Karayı Al Parayı
       </button>
     </div>
